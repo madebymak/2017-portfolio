@@ -2,13 +2,9 @@
   background: url("IMG_3137.JPG") no-repeat center fixed;
   background-size: cover;
   color: white;
-  height: 99vh;
+  height: 100vh;
   width: 100%;
   text-align: center;
-}
-
-.App-header {
-  height: auto;
 }
 
 .App-intro {
@@ -30,13 +26,16 @@
 }
 
 .content:hover .greet {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   display: block;
   height: 100%;
+  padding: 15px;
+  padding-top: 25vh;
 }
 
 .content:hover .latest {
   background-color: rgba(0, 0, 0, 0.5);
   display: block;
   height: 100%;
+  padding: 10px;
 }
