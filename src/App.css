@@ -1,13 +1,24 @@
 .App {
   background: url("IMG_3137.JPG") no-repeat center fixed;
   background-size: auto 100%;
+  color: white;
   height: 99vh;
+  width: 100%;
   text-align: center;
 }
 
 .App-header {
+  height: auto;
 }
 
 .App-intro {
   font-size: large;
+}
+
+.content {
+  height: 99vh;
+}
+
+.content:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
