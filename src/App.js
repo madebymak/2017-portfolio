@@ -10,10 +10,14 @@ class App extends Component {
       <Grid className="App brd">
         <Row className="brd">
           <Col className="brd content" xs={6}>
-            <h1>Intro</h1>
+            <div className="brd greet">
+              <h1>Hi, my name's Jacky. Click to learn more about me.</h1>
+            </div>
           </Col>
           <Col className="brd content" xs={6}>
-            <h1>Hello</h1>
+            <div className="brd latest">
+              <h1>Recent Projects</h1>
+            </div>
           </Col>
         </Row>
       </Grid>

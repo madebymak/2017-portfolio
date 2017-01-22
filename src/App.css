@@ -1,6 +1,6 @@
 .App {
   background: url("IMG_3137.JPG") no-repeat center fixed;
-  background-size: auto 100%;
+  background-size: cover;
   color: white;
   height: 99vh;
   width: 100%;
@@ -15,10 +15,28 @@
   font-size: large;
 }
 
-.content {
-  height: 99vh;
+.greet {
+  display: none;
 }
 
-.content:hover {
+.latest {
+  display: none;
+}
+
+.content {
+  height: 99vh;
+  padding: 0;
+  margin: 0;
+}
+
+.content:hover .greet {
   background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  height: 100%;
+}
+
+.content:hover .latest {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  height: 100%;
 }
