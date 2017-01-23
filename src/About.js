@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './About.css';
+import Button from 'react-bootstrap/lib/Button';
+import Glyphicon from 'react-bootstrap/lib/Glyphicon';
 
 class About extends Component {
 
@@ -18,10 +20,17 @@ class About extends Component {
   render() {
 
     const bio = (
-      <div className="bio overlay" id="about">
-        <button className="closebtn" onClick={this.close}>Close</button>
-        <h2>A Little About Me</h2>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <div className="brd bio overlay" id="about">
+
+        <Button className="closebtn" onClick={this.close}><Glyphicon glyph="remove"/></Button>
+        <div className="brd overlay-content">
+          <h1>About Me</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h2>View my resume.</h2>
+        </div>
       </div>
     )
 
@@ -29,7 +38,7 @@ class About extends Component {
       <div className="greet" id="greet">
         <div className="about-menu" onClick={this.open}>
           <div className="brd" id="bio-text">
-            <h1>Hi, my name is Jacky.</h1>
+            <h1>Hi, my name is Jacky<br/> and I am a web developer</h1>
           </div>
         </div>
         {bio}
