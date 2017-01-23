@@ -21,7 +21,6 @@ class About extends Component {
 
     const bio = (
       <div className="brd bio overlay" id="about">
-
         <Button className="closebtn" onClick={this.close}><Glyphicon glyph="remove"/></Button>
         <div className="brd overlay-content">
           <h1>About Me</h1>
@@ -38,7 +37,7 @@ class About extends Component {
       <div className="greet" id="greet">
         <div className="about-menu" onClick={this.open}>
           <div className="brd" id="bio-text">
-            <h1>Hi, my name is Jacky<br/> and I am a web developer</h1>
+            <h2>Hi, I'm Jacky and I'm a <br/>web developer</h2>
           </div>
         </div>
         {bio}

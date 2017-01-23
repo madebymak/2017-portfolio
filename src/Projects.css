@@ -13,11 +13,25 @@
     transition: 0.7s;
 }
 
-.project-content {
+.project-menu {
   height: 100%;
 }
 
+.project-content {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  padding: 0 20px 20px 20px;
+  font-size: 18px;
+}
+
 .overlay-right .closebtn {
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 24px;
     position: absolute;
     top: 20px;
     right: 45px;
