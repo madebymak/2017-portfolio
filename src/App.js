@@ -13,7 +13,7 @@ class App extends Component {
       <Grid className="App brd">
         <Row className="brd">
           <Col className="brd content" xs={6}>
-            <Header/>
+            {/* <Header/> */}
             <About/>
           </Col>
           <Col className="brd content" xs={6}>
