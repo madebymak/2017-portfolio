@@ -40,3 +40,23 @@
   padding: 15px;
   padding-top: 25vh;
 }
+
+.header {
+  background: transparent;
+  width: 100px;;
+}
+
+.email-btn {
+  background-color: transparent;
+  border: 0;
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 40px;
+}
+
+.email-btn:hover {
+  background-color: transparent;
+  color: blue;
+}
