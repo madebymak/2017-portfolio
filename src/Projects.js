@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import './Projects.css';
 import Button from 'react-bootstrap/lib/Button';
 import Glyphicon from 'react-bootstrap/lib/Glyphicon';
+import Grid from 'react-bootstrap/lib/Grid';
+import Row from 'react-bootstrap/lib/Row';
+import Col from 'react-bootstrap/lib/Col';
 
 class Projects extends Component {
 
@@ -20,26 +23,36 @@ class Projects extends Component {
   render() {
 
     const work = (
-      <div className="overlay-right" id="project-content">
-        <Button className="closebtn" onClick={this.close}><Glyphicon glyph="remove"/></Button>
-        <div className="project-content">
-          <h2>Projects</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </div>
+      <Grid className="brd">
+        <Row className="brd">
+          <Col className="brd gallery" xs={12} md={4}>
+          <img src="http://placehold.it/250x150"></img>
+          </Col>
+          <Col className="brd gallery" xs={12} md={4}>
+          <img src="http://placehold.it/250x150"></img>
+          </Col>
+          <Col className="brd gallery" xs={12} md={4}>
+          <img src="http://placehold.it/250x150"></img>
+          </Col>
+        </Row>
+      </Grid>
     )
 
     return (
       <div className="latest" id="project">
         <div className="project-menu" onClick={this.open}>
           <div className="brd" id="project-text">
-            <h1>Recent Projects</h1>
+            <h2>Here are some of my recent projects.</h2>
           </div>
         </div>
-        {work}
+        <div className="overlay-right" id="project-content">
+          <Button className="closebtn" onClick={this.close}><Glyphicon glyph="remove"/></Button>
+          <div className="project-content">
+            <h2>Projects</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            {work}
+          </div>
+        </div>
       </div>
     );
   }

@@ -15,6 +15,7 @@
 
 .project-menu {
   height: 100%;
+  padding-top: 25vh;
 }
 
 .project-content {
@@ -35,4 +36,8 @@
     position: absolute;
     top: 20px;
     right: 45px;
+}
+
+.gallery{
+  padding: 10px;
 }
