@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
 import About from './About.js';
 import Projects from './Projects.js';
-import Header from './Header.js';
+// import Header from './Header.js';
 
 class App extends Component {
   render() {

@@ -37,7 +37,9 @@ class About extends Component {
       <div className="greet" id="greet">
         <div className="about-menu" onClick={this.open}>
           <div className="brd" id="bio-text">
-            <h2>Hi, I'm Jacky and I'm a <br/>web developer.</h2>
+            <h2>Hi, I'm Jacky and I'm a <p>web developer.</p>
+            <p>Click here to learn more about me</p>
+            </h2>
           </div>
         </div>
         {bio}
