@@ -1,0 +1,35 @@
+
+.modal-dialog {
+  position: fixed;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.modal-header {
+  border-bottom: 0px;
+}
+
+.modal-content {
+  background: black;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 10%;
+}
+
+.modal-content .closebtn {
+  background-color: transparent;
+  border: 0;
+  color: white;
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  right: 45px;
+}
