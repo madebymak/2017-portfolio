@@ -55,7 +55,7 @@ class Gallery extends Component {
 
           <Col className="brd gallery" xs={12} md={4} onClick={this.showModal1}>
             <Image src="http://placehold.it/500x300" alt="alt" responsive/>
-            <Modal dialogClassName="modal-dialog" show={this.state.showModal1}>
+            <Modal dialogClassName="modal-dialog" backdrop="static" show={this.state.showModal1}>
               <Modal.Header>
                 {close}
               </Modal.Header>
