@@ -41,10 +41,11 @@
   left: 0;
   border-radius: 0;
   box-shadow: none;
-  padding: 10%;
+  padding: 5%;
   text-align: center;
   align-items: center;
   margin: 0;
+  overflow: auto;
 }
 
 .modal-content .closebtn {
@@ -57,12 +58,24 @@
   right: 45px;
 }
 
-.gallery{
+.modal-content img {
+  max-width: 65%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.gallery {
   padding: 10px;
 }
 
 .full-img {
   display: block;
   margin: auto;
+  max-height: 450px;
   padding: 10px;
+}
+
+.thumb {
+  max-width: 500px;
+  margin: auto;
 }
