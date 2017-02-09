@@ -1,44 +1,53 @@
 import React, { Component } from 'react';
-import './Projects.css';
+import './About.css';
 import Button from 'react-bootstrap/lib/Button';
 import Glyphicon from 'react-bootstrap/lib/Glyphicon';
+import Modal from 'react-bootstrap/lib/Modal';
 import Gallery from './Gallery.js';
 
 class Projects extends Component {
 
+  constructor(props, context) {
+      super(props, context);
+      this.state = {
+        showModal: false,
+      };
+      this.open = this.open.bind(this);
+      this.close = this.close.bind(this);
+    }
+
   open() {
-    document.getElementById("project-content").style.width = "100%";
-    document.getElementById("project-text").style.display = "none";
-    document.getElementById("project").style.backgroundColor = "transparent";
+    this.setState({showModal: true});
   };
 
   close() {
-    document.getElementById("project-content").style.width = "0%";
-    document.getElementById("project-text").style.display = "block";
-    document.getElementById("project").style.backgroundColor = "rgba(0, 0, 0, 0.3)";
-  };
-
-  click() {
-    console.log("fired");
+    this.setState({showModal: false});
   };
 
   render() {
 
+    const bio = (
+      <Modal className="box right" show={this.state.showModal}>
+        <Modal.Header>
+          <Button className="close-btn" onClick={this.close}><Glyphicon glyph="remove"/></Button>
+        </Modal.Header>
+        <Modal.Body>
+          {/* <h2>Recent Projects</h2> */}
+          Coming Soon. Check out my github page for now.
+          <h2> www.github.com/madebymak</h2>
+          {/* <Gallery/> */}
+        </Modal.Body>
+      </Modal>
+    )
+
     return (
-      <div className="latest" id="project">
-        <div className="project-menu" onClick={this.open}>
-          <div className="brd" id="project-text">
+      <div className="greet" id="greet">
+        <div className="about-menu" onClick={this.open}>
+          <div className="brd" id="bio-text">
             <h2>Click here to see some of my recent projects.</h2>
           </div>
         </div>
-        <div className="overlay-right" id="project-content">
-          <Button className="closebtn" onClick={this.close}><Glyphicon glyph="remove"/></Button>
-          <div className="project-content">
-            <h2>Projects</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <Gallery/>
-          </div>
-        </div>
+        {bio}
       </div>
     );
   }
