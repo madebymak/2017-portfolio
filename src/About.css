@@ -48,7 +48,7 @@
 }
 
 .modal-content {
-  background-color: rgba(0,0,0, 0.3);
+  background-color: rgba(0,0,0, 0.7);
   color: white;
   position: relative;;
   border-radius: 0;
@@ -58,6 +58,14 @@
   align-items: center;
   margin: 0;
   font-size: 20px;
+}
+
+@media screen and (max-device-width : 767px)
+{
+  .modal-content
+  {
+    font-size: 16px;
+  }
 }
 
 .modal-content h1 {

@@ -35,7 +35,7 @@ class Projects extends Component {
           {/* <h2>Recent Projects</h2> */}
           <i className="fa fa-github fa-5x" aria-hidden="true"></i>
           <a href="https://github.com/madebymak" target="blank">
-          <h2> www.github.com/madebymak</h2></a>
+          <p>www.github.com/madebymak</p></a>
           {/* <Gallery/> */}
         </Modal.Body>
       </Modal>
@@ -45,7 +45,7 @@ class Projects extends Component {
       <div className="greet" id="greet">
         <div className="about-menu" onClick={this.open}>
           <div className="brd" id="bio-text">
-            <h2>Click here to see some of my recent projects.</h2>
+            <h2>Recent Work</h2>
           </div>
         </div>
         {bio}

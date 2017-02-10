@@ -37,7 +37,7 @@ class About extends Component {
           Through out that time, I found myself developing an interest in interactive design and decided to move onto the web.
           Outside of coding, I am an avid snowboarder and even moved to Japan in 2015 for a year to teach it.</p>
           <p>If you have any questions, I can be reached through email at <a href="mailto:mr.jmak@gmail.com?subject=From portfolio site">mr.jmak@gmail.com</a>.</p>
-          <h3>View my <a href="https://www.dropbox.com/s/id74r4pz3lkshc2/jacky_mak_resume.pdf?dl=0" target="blank">resume</a>.</h3>
+          <h3><a href="https://www.dropbox.com/s/id74r4pz3lkshc2/jacky_mak_resume.pdf?dl=0" target="blank">View my resume</a>.</h3>
         </Modal.Body>
       </Modal>
     )
@@ -47,7 +47,6 @@ class About extends Component {
         <div className="about-menu" onClick={this.open}>
           <div className="brd" id="bio-text">
             <h2>Hi, I'm Jacky and I'm a <p>web developer.</p>
-            <p>Click here to learn more about me</p>
             </h2>
           </div>
         </div>
