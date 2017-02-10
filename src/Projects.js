@@ -3,7 +3,7 @@ import './About.css';
 import Button from 'react-bootstrap/lib/Button';
 import Glyphicon from 'react-bootstrap/lib/Glyphicon';
 import Modal from 'react-bootstrap/lib/Modal';
-import Gallery from './Gallery.js';
+// import Gallery from './Gallery.js';
 
 class Projects extends Component {
 

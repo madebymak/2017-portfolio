@@ -32,11 +32,12 @@ class About extends Component {
         </Modal.Header>
         <Modal.Body>
           <h1>About Me</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <h2>View my resume.</h2>
+          <p>I am a web developer originally from Saskatchewan, now currently living in Vancouver, BC.
+          Before pursuing a career in web development, I spent a number of years working in the print industry as a graphic designer.
+          Through out that time, I found myself developing an interest in interactive design and decided to move onto the web.
+          Outside of coding, I am an avid snowboarder and even moved to Japan in 2015 for a year to teach it.</p>
+          <p>If you have any questions, I can be reached through email at <a href="mailto:mr.jmak@gmail.com?subject=From portfolio site">mr.jmak@gmail.com</a>.</p>
+          <h3>View my <a href="https://www.dropbox.com/s/id74r4pz3lkshc2/jacky_mak_resume.pdf?dl=0" target="blank">resume</a>.</h3>
         </Modal.Body>
       </Modal>
     )
