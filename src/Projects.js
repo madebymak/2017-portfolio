@@ -33,8 +33,9 @@ class Projects extends Component {
         </Modal.Header>
         <Modal.Body>
           {/* <h2>Recent Projects</h2> */}
-          Coming Soon. Check out my github page for now.
-          <h2> www.github.com/madebymak</h2>
+          <i className="fa fa-github fa-5x" aria-hidden="true"></i>
+          <a href="https://github.com/madebymak" target="blank">
+          <h2> www.github.com/madebymak</h2></a>
           {/* <Gallery/> */}
         </Modal.Body>
       </Modal>

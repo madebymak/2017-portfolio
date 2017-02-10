@@ -8,3 +8,7 @@ body {
 .brd {
   border: 0px solid red;
 }
+
+a {
+  color: white;
+}
