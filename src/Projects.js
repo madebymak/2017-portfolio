@@ -3,7 +3,7 @@ import './About.css';
 import Button from 'react-bootstrap/lib/Button';
 import Glyphicon from 'react-bootstrap/lib/Glyphicon';
 import Modal from 'react-bootstrap/lib/Modal';
-// import Gallery from './Gallery.js';
+import Gallery from './Gallery.js';
 
 class Projects extends Component {
 
@@ -32,11 +32,11 @@ class Projects extends Component {
           <Button className="close-btn" onClick={this.close}><Glyphicon glyph="remove"/></Button>
         </Modal.Header>
         <Modal.Body>
-          {/* <h2>Recent Projects</h2> */}
-          <i className="fa fa-github fa-5x" aria-hidden="true"></i>
+          <h2>Recent Projects</h2>
+          {/* <i className="fa fa-github fa-5x" aria-hidden="true"></i>
           <a href="https://github.com/madebymak" target="blank">
-          <p>www.github.com/madebymak</p></a>
-          {/* <Gallery/> */}
+          <p>www.github.com/madebymak</p></a> */}
+          <Gallery/>
         </Modal.Body>
       </Modal>
     )
@@ -45,7 +45,7 @@ class Projects extends Component {
       <div className="greet" id="greet">
         <div className="about-menu" onClick={this.open}>
           <div className="brd" id="bio-text">
-            <h2>Recent Work</h2>
+            <h2>Recent Work</h2><br/>
           </div>
         </div>
         {bio}

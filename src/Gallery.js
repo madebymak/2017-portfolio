@@ -54,11 +54,11 @@ class Gallery extends Component {
     )
 
     return (
-      <Grid className="brd">
+      <Grid className="brd gallery">
         <Row className="brd">
 
           <Col className="brd gallery" xs={12} md={4} onClick={this.showModal1}>
-            <div className="thumb">
+            <div>
               <Image src={Wiki} alt="alt" responsive/>
             </div>
 
@@ -78,17 +78,18 @@ class Gallery extends Component {
           </Col>
 
           <Col className="brd gallery" xs={12} md={4} onClick={this.showModal2}>
-            <div className="thumb">
-              <Image src={Tweetr} alt="alt" responsive/>
+            <div>
+              <Image src={Chatty} alt="alt" responsive/>
             </div>
-            <Modal dialogClassName="modal-dialog" show={this.state.showModal2}>
+
+            <Modal dialogClassName="modal-dialog" backdrop="static" show={this.state.showModal2}>
               <Modal.Header>
                 {close}
               </Modal.Header>
-              <Modal.Body>
+              <Modal.Body className="brd">
                 <h2>Project #2</h2>
-                <div className="">
-                <Image src={Tweetr} alt="alt" responsive/>
+                <div className="full-img">
+                <Image src={Chatty} alt="alt" responsive/>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <h3>www.linkhere.com</h3>
               </div>
@@ -96,19 +97,22 @@ class Gallery extends Component {
             </Modal>
           </Col>
 
-          <Col className="brd gallery" xs={12} md={4} onClick={this.showModal3}>
-            <div className="thumb">
-              <Image src={Chatty} alt="alt" responsive/>
+          <Col className="brd" xs={12} md={4} onClick={this.showModal3}>
+            <div>
+              <Image src={Tweetr} alt="alt" responsive/>
             </div>
-            <Modal dialogClassName="modal-dialog" show={this.state.showModal3}>
+
+            <Modal dialogClassName="modal-dialog" backdrop="static" show={this.state.showModal3}>
               <Modal.Header>
                 {close}
               </Modal.Header>
-              <Modal.Body>
+              <Modal.Body className="brd">
                 <h2>Project #3</h2>
-                <Image src={Chatty} alt="alt" responsive/>
+                <div className="full-img">
+                <Image src={Tweetr} alt="alt" responsive/>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <h3>www.linkhere.com</h3>
+              </div>
               </Modal.Body>
             </Modal>
           </Col>

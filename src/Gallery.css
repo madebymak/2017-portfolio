@@ -73,9 +73,9 @@
   margin: auto;
   max-height: 450px;
   padding: 10px;
-}
-
-.thumb {
-  max-width: 500px;
-  margin: auto;
 }*/
+
+.gallery {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
