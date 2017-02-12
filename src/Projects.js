@@ -32,7 +32,7 @@ class Projects extends Component {
           <Button className="close-btn" onClick={this.close}><Glyphicon glyph="remove"/></Button>
         </Modal.Header>
         <Modal.Body>
-          <h2>Recent Projects</h2>
+          <h2>Recent Projects</h2><br/>
           {/* <i className="fa fa-github fa-5x" aria-hidden="true"></i>
           <a href="https://github.com/madebymak" target="blank">
           <p>www.github.com/madebymak</p></a> */}

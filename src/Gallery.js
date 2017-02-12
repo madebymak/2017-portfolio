@@ -50,7 +50,7 @@ class Gallery extends Component {
   render() {
 
     const close = (
-      <Button className="closebtn" onClick={this.hideModal}><Glyphicon glyph="remove"/></Button>
+      <Button className="close-btn" onClick={this.hideModal}><Glyphicon glyph="remove"/></Button>
     )
 
     return (
@@ -62,14 +62,14 @@ class Gallery extends Component {
               <Image src={Wiki} alt="alt" responsive/>
             </div>
 
-            <Modal dialogClassName="modal-dialog" backdrop="static" show={this.state.showModal1}>
+            <Modal dialogClassName="project-modal" backdrop="static" show={this.state.showModal1}>
               <Modal.Header>
                 {close}
               </Modal.Header>
               <Modal.Body className="brd">
                 <h2>Project #1</h2>
                 <div className="full-img">
-                <Image src={Wiki} alt="alt" responsive/>
+                <Image className="gallery-img" src={Wiki} alt="alt" responsive/>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <h3>www.linkhere.com</h3>
               </div>
@@ -82,14 +82,14 @@ class Gallery extends Component {
               <Image src={Chatty} alt="alt" responsive/>
             </div>
 
-            <Modal dialogClassName="modal-dialog" backdrop="static" show={this.state.showModal2}>
+            <Modal dialogClassName="project-modal" backdrop="static" show={this.state.showModal2}>
               <Modal.Header>
                 {close}
               </Modal.Header>
               <Modal.Body className="brd">
                 <h2>Project #2</h2>
                 <div className="full-img">
-                <Image src={Chatty} alt="alt" responsive/>
+                <Image className="gallery-img" src={Chatty} alt="alt" responsive/>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <h3>www.linkhere.com</h3>
               </div>
@@ -102,14 +102,14 @@ class Gallery extends Component {
               <Image src={Tweetr} alt="alt" responsive/>
             </div>
 
-            <Modal dialogClassName="modal-dialog" backdrop="static" show={this.state.showModal3}>
+            <Modal dialogClassName="project-modal" backdrop="static" show={this.state.showModal3}>
               <Modal.Header>
                 {close}
               </Modal.Header>
               <Modal.Body className="brd">
                 <h2>Project #3</h2>
                 <div className="full-img">
-                <Image src={Tweetr} alt="alt" responsive/>
+                <Image src={Tweetr} className="gallery-img" alt="alt" responsive/>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <h3>www.linkhere.com</h3>
               </div>
