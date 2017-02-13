@@ -67,11 +67,11 @@ class Gallery extends Component {
                 {close}
               </Modal.Header>
               <Modal.Body className="brd">
-                <h2>Project #1</h2>
+                <h2>Wiki Where</h2>
                 <div className="full-img">
                 <Image className="gallery-img" src={Wiki} alt="alt" responsive/>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <h3>www.linkhere.com</h3>
+                <p>A geographical game where a player guess a city based on info provided by Wikipedia. Built using React, Cesium, WebPack, Material-UI, Babel and Node.js.</p>
+                <a href="https://github.com/madebymak/wiki_where" target="blank"><i className="fa fa-github fa-3x" aria-hidden="true"></i></a>
               </div>
               </Modal.Body>
             </Modal>
@@ -87,11 +87,11 @@ class Gallery extends Component {
                 {close}
               </Modal.Header>
               <Modal.Body className="brd">
-                <h2>Project #2</h2>
+                <h2>Chatty App</h2>
                 <div className="full-img">
                 <Image className="gallery-img" src={Chatty} alt="alt" responsive/>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <h3>www.linkhere.com</h3>
+                <p>A real-time messaging app like Slack where the user do not have to reload the page in order to see updates. Stacks used were React, Babel, WebPack and Git for version control.</p>
+                <a href="https://github.com/madebymak/chatr" target="blank"><i className="fa fa-github fa-3x" aria-hidden="true"></i></a>
               </div>
               </Modal.Body>
             </Modal>
@@ -107,16 +107,15 @@ class Gallery extends Component {
                 {close}
               </Modal.Header>
               <Modal.Body className="brd">
-                <h2>Project #3</h2>
+                <h2>Tweetr</h2>
                 <div className="full-img">
                 <Image src={Tweetr} className="gallery-img" alt="alt" responsive/>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <h3>www.linkhere.com</h3>
+                <p>A simple single-page AJAX-based Twitter clone. Stacks used were ES6 (client side JS), jQuery (Ajax), CSS3, HTML5, Git for version control and mongoDB for database.</p>
+                <a href="https://github.com/madebymak/tweetr" target="blank"><i className="fa fa-github fa-3x" aria-hidden="true"></i></a>
               </div>
               </Modal.Body>
             </Modal>
           </Col>
-
         </Row>
       </Grid>
     );
