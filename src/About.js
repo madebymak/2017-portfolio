@@ -50,8 +50,8 @@ class About extends Component {
       <div className="greet" id="greet">
         <div className="about-menu" onClick={this.open}>
           <div className="brd" id="bio-text">
-            <h2>Hi, I'm Jacky and I'm a <p>web developer.</p>
-            </h2>
+            <h1>Hi, I'm Jacky<br/> and I'm a<br/> web developer.
+          </h1>
           </div>
         </div>
         {bio}

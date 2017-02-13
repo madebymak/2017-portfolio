@@ -45,7 +45,7 @@ class Projects extends Component {
       <div className="greet" id="greet">
         <div className="about-menu" onClick={this.open}>
           <div className="brd" id="bio-text">
-            <h2>Recent Work</h2><br/>
+            <h1>Recent Works</h1><br/>
           </div>
         </div>
         {bio}
