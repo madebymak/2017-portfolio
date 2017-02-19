@@ -33,9 +33,6 @@ class Projects extends Component {
         </Modal.Header>
         <Modal.Body>
           <h2>Recent Projects</h2><br/>
-          {/* <i className="fa fa-github fa-5x" aria-hidden="true"></i>
-          <a href="https://github.com/madebymak" target="blank">
-          <p>www.github.com/madebymak</p></a> */}
           <Gallery/>
         </Modal.Body>
       </Modal>
@@ -44,7 +41,7 @@ class Projects extends Component {
     return (
       <div className="greet" id="greet">
         <div className="project-menu" onClick={this.open}>
-          <div className="talk-bubble tri-right border round left-top">
+          <div className="talk-bubble tri-right round left-top">
             <div className="talktext">
               <p>Recent projects</p> <p>I've done.</p>
             </div>

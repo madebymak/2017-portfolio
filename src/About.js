@@ -51,7 +51,7 @@ class About extends Component {
     return (
       <div className="greet" id="greet">
         <div className="brd about-menu" onClick={this.open}>
-          <div className="talk-bubble tri-right border round right-in">
+          <div className="talk-bubble tri-right round right-in">
             <div className="talktext">
               <p>Hi, I'm Jacky</p> <p>and I'm a</p> <p>web developer.</p>
             </div>
