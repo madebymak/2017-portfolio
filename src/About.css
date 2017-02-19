@@ -24,23 +24,26 @@
 /*Left*/
 .modal.left.fade .modal-dialog{
   left: -320px;
-  -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
-     -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
-       -o-transition: opacity 0.3s linear, left 0.3s ease-out;
-          transition: opacity 0.3s linear, left 0.3s ease-out;
+  -webkit-transition: opacity 0.4s linear, left 0.4s ease-out;
+     -moz-transition: opacity 0.4s linear, left 0.4s ease-out;
+       -o-transition: opacity 0.4s linear, left 0.4s ease-out;
+          transition: opacity 0.4s linear, left 0.4s ease-out;
 }
 
 .modal.left.fade.in .modal-dialog{
+  top: 0;
   left: 0;
+width: 100vw;
+height: 100vh;
 }
 
 /*Right*/
 .modal.right.fade .modal-dialog {
   right: -320px;
-  -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
-     -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
-       -o-transition: opacity 0.3s linear, right 0.3s ease-out;
-          transition: opacity 0.3s linear, right 0.3s ease-out;
+  -webkit-transition: opacity 0.4s linear, right 0.4s ease-out;
+     -moz-transition: opacity 0.4s linear, right 0.4s ease-out;
+       -o-transition: opacity 0.4s linear, right 0.4s ease-out;
+          transition: opacity 0.4s linear, right 0.4s ease-out;
 }
 
 .modal.right.fade.in .modal-dialog {
@@ -48,7 +51,11 @@
 }
 
 .modal-content {
-  background-color: rgba(0,0,0, 0.7);
+  background: ##81F3FD; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#1D77EF, #81F3FD); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#1D77EF, #81F3FD); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#1D77EF, #81F3FD); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#1D77EF, #81F3FD); /* Standard syntax */
   color: white;
   position: relative;;
   border-radius: 0;
