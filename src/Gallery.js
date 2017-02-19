@@ -7,6 +7,8 @@ import Col from 'react-bootstrap/lib/Col';
 import Tweetr from './projects/tweetr.js';
 import Chatty from './projects/chatty.js';
 import WikiWhere from './projects/wiki-where.js'
+import Journal from './projects/journal.js';
+
 
 class Gallery extends Component {
 
@@ -20,13 +22,18 @@ class Gallery extends Component {
           </Col>
 
           <Col className="brd gallery" xs={12} md={4}>
-            <Chatty />
+            <Journal />
           </Col>
 
           <Col className="brd gallery" xs={12} md={4}>
+            <Chatty />
+          </Col>
+        </Row>
+
+        <Row>
+          <Col className="brd gallery" xs={12} md={4}>
             <Tweetr />
           </Col>
-
         </Row>
       </Grid>
     );
