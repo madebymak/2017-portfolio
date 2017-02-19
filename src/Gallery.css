@@ -12,7 +12,7 @@
 .close-btn {
   background-color: transparent;
   border: 0;
-  color: white;
+  color: #F7F7F7;
   font-size: 24px;
   position: absolute;
   top: 5%;
@@ -21,7 +21,7 @@
 
 .close-btn:hover {
   background-color: transparent;
-  color: white;
+  color: #F7F7F7;
 }
 
 .project-modal .modal-content  {
