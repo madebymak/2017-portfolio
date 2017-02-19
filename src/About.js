@@ -40,10 +40,10 @@ class About extends Component {
           Outside of coding, I am an avid snowboarder and even moved to Japan in 2015 for a year to teach it.</p>
           <p>If you have any questions, I can be reached through email at mr.jmak@gmail.com</p>
           {/* <h3><a href="https://www.dropbox.com/s/id74r4pz3lkshc2/jacky_mak_resume.pdf?dl=0" target="blank">View my resume</a>.</h3> */}
-          <a href="https://www.dropbox.com/s/id74r4pz3lkshc2/jacky_mak_resume.pdf?dl=0" target="blank"><Button className="about-btn" bsSize="large"><i className="fa fa-dropbox" aria-hidden="true"></i> Resume</Button></a>
-          <a href="mailto:mr.jmak@gmail.com?subject=From portfolio site"><Button className="about-btn" bsSize="large"><i className="fa fa-envelope-o" aria-hidden="true"></i> Email</Button></a>
-          <a href="https://github.com/madebymak" target="blank"><Button className="about-btn" bsSize="large"><i className="fa fa-github" aria-hidden="true"></i> Github</Button></a>
-          <a href="https://www.instagram.com/madebymak" target="blank"><Button className="about-btn" bsSize="large"><i className="fa fa-instagram" aria-hidden="true"></i> Instagram</Button></a>
+          <a href="https://www.dropbox.com/s/id74r4pz3lkshc2/jacky_mak_resume.pdf?dl=0" target="blank"><Button className="about-btn" bsSize="large"><i className="fa fa-file-text-o" aria-hidden="true"></i></Button></a>
+          <a href="mailto:mr.jmak@gmail.com?subject=From portfolio site"><Button className="about-btn" bsSize="large"><i className="fa fa-envelope-o" aria-hidden="true"></i></Button></a>
+          <a href="https://github.com/madebymak" target="blank"><Button className="about-btn" bsSize="large"><i className="fa fa-github" aria-hidden="true"></i></Button></a>
+          <a href="https://www.instagram.com/madebymak" target="blank"><Button className="about-btn" bsSize="large"><i className="fa fa-instagram" aria-hidden="true"></i></Button></a>
         </Modal.Body>
       </Modal>
     )
