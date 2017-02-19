@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './About.css';
+import './bubbles.css';
+
 import Button from 'react-bootstrap/lib/Button';
 import Glyphicon from 'react-bootstrap/lib/Glyphicon';
 import Modal from 'react-bootstrap/lib/Modal';
@@ -48,10 +50,11 @@ class About extends Component {
 
     return (
       <div className="greet" id="greet">
-        <div className="about-menu" onClick={this.open}>
-          <div className="brd" id="bio-text">
-            <h1>Hi, I'm Jacky<br/> and I'm a<br/> web developer.
-          </h1>
+        <div className="brd about-menu" onClick={this.open}>
+          <div className="talk-bubble tri-right border round right-in">
+            <div className="talktext">
+              <p>Hi, I'm Jacky</p> <p>and I'm a</p> <p>web developer.</p>
+            </div>
           </div>
         </div>
         {bio}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './About.css';
+import './Projects.css';
 import Button from 'react-bootstrap/lib/Button';
 import Glyphicon from 'react-bootstrap/lib/Glyphicon';
 import Modal from 'react-bootstrap/lib/Modal';
@@ -43,9 +43,11 @@ class Projects extends Component {
 
     return (
       <div className="greet" id="greet">
-        <div className="about-menu" onClick={this.open}>
-          <div className="brd" id="bio-text">
-            <h1>Recent Works</h1><br/>
+        <div className="project-menu" onClick={this.open}>
+          <div className="talk-bubble tri-right border round left-top">
+            <div className="talktext">
+              <p>Recent projects</p> <p>I've done.</p>
+            </div>
           </div>
         </div>
         {bio}

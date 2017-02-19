@@ -37,3 +37,8 @@
     top: 20px;
     right: 45px;
 }
+
+.project-menu {
+  height: 100%;
+  padding-top: 30vh;
+}
