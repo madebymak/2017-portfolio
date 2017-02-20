@@ -9,7 +9,7 @@ import Image from 'react-bootstrap/lib/Image';
 
 import JournalPic from '../img/happy-journal.png';
 
-class ChattyApp extends Component {
+class Journal extends Component {
 
   constructor(props) {
       super(props);
@@ -53,8 +53,8 @@ class ChattyApp extends Component {
                 <h2>Happy Journal App</h2>
                 <div className="full-img">
                 <Image className="gallery-img" src={JournalPic} alt="alt" responsive/>
-                <p>A real-time messaging app like Slack where the user do not have to reload the page in order to see updates. Stacks used were React, Babel, WebPack and Git for version control.</p>
-                <a href="https://github.com/madebymak/chatr" target="blank"><i className="fa fa-github fa-3x" aria-hidden="true"></i></a>
+                <p>A journal entry app that ranks entries based on a user submitted sentiment score. Stacks used were React, NodeJS, ExpressJS and RethinkDB.</p>
+                <a href="https://github.com/madebymak/react-rethinkdb-journal-2" target="blank"><i className="fa fa-github fa-3x" aria-hidden="true"></i></a>
               </div>
               </Modal.Body>
             </Modal>
@@ -65,4 +65,4 @@ class ChattyApp extends Component {
   }
 }
 
-export default ChattyApp;
+export default Journal;
