@@ -134,12 +134,12 @@
 
   .left-btn {
     left: 15%;
-    background-color: #4CD964;
+    /*background-color: #4CD964;*/
   }
 
   .right-btn {
     right: 15%;
-    background-color: #FF1300;
+    /*background-color: #FF1300;*/
   }
 
   .icon {
