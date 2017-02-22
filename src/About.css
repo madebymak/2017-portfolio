@@ -65,6 +65,7 @@
   align-items: center;
   margin: 0;
   font-size: 20px;
+  height: 100%;
 }
 
 .modal-content h1 {
