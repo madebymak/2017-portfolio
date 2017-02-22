@@ -39,7 +39,6 @@ class About extends Component {
           Through out that time, I found myself developing an interest in interactive design and decided to move onto the web.
           Outside of coding, I am an avid snowboarder and even moved to Japan in 2015 for a year to teach it.</p>
           <p>If you have any questions, I can be reached through email at mr.jmak@gmail.com</p>
-          {/* <h3><a href="https://www.dropbox.com/s/id74r4pz3lkshc2/jacky_mak_resume.pdf?dl=0" target="blank">View my resume</a>.</h3> */}
           <a href="https://www.dropbox.com/s/id74r4pz3lkshc2/jacky_mak_resume.pdf?dl=0" target="blank"><Button className="about-btn" bsSize="large"><i className="fa fa-file-text-o" aria-hidden="true"></i></Button></a>
           <a href="mailto:mr.jmak@gmail.com?subject=From portfolio site"><Button className="about-btn" bsSize="large"><i className="fa fa-envelope-o" aria-hidden="true"></i></Button></a>
           <a href="https://github.com/madebymak" target="blank"><Button className="about-btn" bsSize="large"><i className="fa fa-github" aria-hidden="true"></i></Button></a>
@@ -49,15 +48,18 @@ class About extends Component {
     )
 
     return (
-      <div className="greet" id="greet">
-        <div className="brd about-menu" onClick={this.open}>
-          <div className="talk-bubble tri-right round right-in">
-            <div className="talktext">
-              <p>Hi, I'm Jacky</p> <p>and I'm a</p> <p>web developer.</p>
+      <div className="greet" onClick={this.open}>
+          <div className="brd about-menu">
+            <div className="talk-bubble tri-right round right-in">
+              <div className="talktext">
+                <p>Hi, I'm Jacky</p> <p>and I'm a</p> <p>web developer.</p>
+              </div>
             </div>
           </div>
+          {bio}
+        <div className="mobile-view left-btn">
+          <i className="icon fa fa-user-o" aria-hidden="true"></i>
         </div>
-        {bio}
       </div>
     );
   }

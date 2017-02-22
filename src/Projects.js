@@ -26,7 +26,7 @@ class Projects extends Component {
 
   render() {
 
-    const bio = (
+    const projects = (
       <Modal className="box right" show={this.state.showModal}>
         <Modal.Header>
           <Button className="close-btn" onClick={this.close}><Glyphicon glyph="remove"/></Button>
@@ -39,15 +39,18 @@ class Projects extends Component {
     )
 
     return (
-      <div className="greet" id="greet">
-        <div className="project-menu" onClick={this.open}>
+      <div className="greet" onClick={this.open}>
+        <div className="brd project-menu">
           <div className="talk-bubble tri-right round left-top">
             <div className="talktext">
               <p>Recent projects</p> <p>I've done.</p>
             </div>
           </div>
         </div>
-        {bio}
+        {projects}
+        <div className="mobile-view right-btn">
+          <i className="icon fa fa-briefcase" aria-hidden="true"></i>
+        </div>
       </div>
     );
   }

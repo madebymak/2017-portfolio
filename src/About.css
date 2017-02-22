@@ -67,14 +67,6 @@
   font-size: 20px;
 }
 
-@media screen and (max-device-width : 767px)
-{
-  .modal-content
-  {
-    font-size: 16px;
-  }
-}
-
 .modal-content h1 {
   margin-bottom: 30px;
 }
@@ -113,7 +105,46 @@
   border-radius: 50px;
   font-size: 30px;
 }
-/*
-.about-btn:hover {
-  background-color: #fff;
-}*/
+
+.mobile-view {
+  display: none;
+}
+
+
+@media screen and (max-device-width : 768px)
+{
+  .modal-content
+  {
+    font-size: 16px;
+  }
+
+  .mobile-view {
+    bottom: 5%;
+    padding: 2%;
+    display: inline-block;
+    position: fixed;
+    width: 80px;
+	  height: 80px;
+    font-size: 45px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+  }
+
+  .left-btn {
+    left: 15%;
+    background-color: #4CD964;
+  }
+
+  .right-btn {
+    right: 15%;
+    background-color: #FF1300;
+  }
+
+  .icon {
+    position:absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    margin:0;
+  }
+}

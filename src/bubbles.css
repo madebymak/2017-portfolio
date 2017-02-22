@@ -9,11 +9,10 @@
   background-color: #007AFF;
 }
 
-.round{
+.round {
   border-radius: 30px;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
-
 }
 
 /* Right triangle placed top left flush. */
@@ -80,4 +79,11 @@
   /* remove webkit p margins */
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
+}
+
+@media screen and (max-device-width : 768px)
+{
+  .talk-bubble {
+		display: none;
+  }
 }
